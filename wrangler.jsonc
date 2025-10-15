@@ -23,5 +23,9 @@
 			"bucket_name": "flag-photos"
 		}
 	],
+	"vars": {
+		"BETTER_AUTH_URL": "https://flag-trax-game.lando555.workers.dev",
+		"ADMIN_EMAIL": "admin@test.com"
+	},
 	"upload_source_maps": true
 }
