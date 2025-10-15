@@ -2,7 +2,7 @@
 -- Password for all accounts: Test123!
 
 -- Admin user (matches ADMIN_EMAIL)
-INSERT OR IGNORE INTO user (id, name, email, emailVerified, createdAt, updatedAt)
+INSERT OR IGNORE INTO user (id, name, email, email_verified, created_at, updated_at)
 VALUES (
   'demo-admin-001',
   'Demo Admin',
@@ -12,7 +12,7 @@ VALUES (
   unixepoch() * 1000
 );
 
-INSERT OR IGNORE INTO account (id, accountId, providerId, userId, password, createdAt, updatedAt)
+INSERT OR IGNORE INTO account (id, account_id, provider_id, user_id, password, created_at, updated_at)
 VALUES (
   'demo-admin-account-001',
   'demo-admin-001',
@@ -24,7 +24,7 @@ VALUES (
 );
 
 -- Demo Player 1
-INSERT OR IGNORE INTO user (id, name, email, emailVerified, createdAt, updatedAt)
+INSERT OR IGNORE INTO user (id, name, email, email_verified, created_at, updated_at)
 VALUES (
   'demo-player-001',
   'Demo Player 1',
@@ -34,7 +34,7 @@ VALUES (
   unixepoch() * 1000
 );
 
-INSERT OR IGNORE INTO account (id, accountId, providerId, userId, password, createdAt, updatedAt)
+INSERT OR IGNORE INTO account (id, account_id, provider_id, user_id, password, created_at, updated_at)
 VALUES (
   'demo-player-account-001',
   'demo-player-001',
@@ -46,7 +46,7 @@ VALUES (
 );
 
 -- Demo Player 2
-INSERT OR IGNORE INTO user (id, name, email, emailVerified, createdAt, updatedAt)
+INSERT OR IGNORE INTO user (id, name, email, email_verified, created_at, updated_at)
 VALUES (
   'demo-player-002',
   'Demo Player 2',
@@ -56,7 +56,7 @@ VALUES (
   unixepoch() * 1000
 );
 
-INSERT OR IGNORE INTO account (id, accountId, providerId, userId, password, createdAt, updatedAt)
+INSERT OR IGNORE INTO account (id, account_id, provider_id, user_id, password, created_at, updated_at)
 VALUES (
   'demo-player-account-002',
   'demo-player-002',
