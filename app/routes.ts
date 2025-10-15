@@ -5,6 +5,7 @@ export default [
 	index("routes/home.tsx"),
 	route("sign-in", "routes/auth/sign-in.tsx"),
 	route("sign-up", "routes/auth/sign-up.tsx"),
+	route("dev-signin", "routes/dev-signin.tsx"), // Development only
 
 	// Protected routes (will add auth checks in loaders later)
 	route("request-flag", "routes/request-flag.tsx"),

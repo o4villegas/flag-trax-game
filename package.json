@@ -72,9 +72,15 @@
 		"cf-typegen": "wrangler types",
 		"deploy": "npm run build && wrangler deploy",
 		"dev": "react-router dev",
+		"dev:wsl": "react-router dev --host 0.0.0.0 --port 5173",
+		"dev:expose": "react-router dev --host",
 		"preview": "npm run build && vite preview",
 		"typecheck": "npm run cf-typegen && react-router typegen && tsc -b",
 		"test": "playwright test",
-		"test:ui": "playwright test --ui"
+		"test:ui": "playwright test --ui",
+		"db:migrate": "npx wrangler d1 execute flag-capture-db --local --file=./migrations/0001_init.sql",
+		"seed:hash": "node scripts/hash-password.js",
+		"seed:users": "node scripts/seed-test-users.js",
+		"setup:dev": "npm run db:migrate && npm run seed:users"
 	}
 }

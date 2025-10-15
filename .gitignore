@@ -201,3 +201,8 @@ dist
 ### React Router ###
 .react-router/
 /build/
+
+### Development ###
+local.db
+*.local.sql
+scripts/*.log
