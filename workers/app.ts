@@ -24,7 +24,7 @@ const app = new Hono<{ Bindings: Env; Variables: Variables }>();
 
 // Initialize auth and db on each request
 app.use("*", async (c, next) => {
-	c.set("auth", createAuth(c.env.DB));
+	c.set("auth", createAuth(c.env));
 	c.set("db", drizzle(c.env.DB));
 	await next();
 });
